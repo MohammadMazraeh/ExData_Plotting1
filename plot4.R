@@ -1,4 +1,4 @@
-#source('loadData.R')
+source('loadData.R')
 png(filename = 'plot4.png',width = 480,height = 480)
 x <- tidyData[!is.na(tidyData$Global_active_power) & !is.na(tidyData$Date),]
 par(mfrow = c(2,2))
